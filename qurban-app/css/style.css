@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f4f7fb;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.container {
+
+  width: 90%;
+
+  max-width: 450px;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  color: green;
+}
+
+input,
+select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 15px;
+
+  background: green;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+
+  background: darkgreen;
+}
+
+
+.card {
+
+  background: #f9f9f9;
+
+  padding: 15px;
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+
+  border-left: 5px solid green;
+}
+
+.card h3 {
+
+  color: green;
+
+  margin-bottom: 8px;
+}
+
+.card p {
+
+  margin-top: 5px;
+}
+
+
+.card button {
+
+  background: red;
+
+  margin-top: 10px;
+}
+
+.card button:hover {
+
+  background: darkred;
+}
+
+
+.dashboard {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.box {
+
+  flex: 1;
+
+  background: green;
+
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.box h2 {
+
+  margin-bottom: 5px;
+}
