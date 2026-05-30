@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Qurban</title>
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="hero">
+
+  <div class="hero-overlay">
+
+      <div class="topbar">
+
+          <div class="logo">
+              🐄 Qurban Berkah
+          </div>
+
+          <div class="user">
+
+              Halo,
+
+              <span id="welcome">
+                  Peserta
+              </span>
+
+          </div>
+
+      </div>
+
+      <div class="hero-content">
+
+          <h1>
+              Selamat Datang,
+              <span id="welcome2">
+                  Peserta
+              </span>
+          </h1>
+
+          <p>
+              Terima kasih telah menjadi bagian
+              dari ibadah qurban.
+          </p>
+
+      </div>
+
+  </div>
+
+</div>
+
+<div class="main-content">
+
+  <div class="stats">
+
+      <div class="stat-card">
+
+          <h2 id="totalPeserta">
+              0
+          </h2>
+
+          <p>Total Peserta</p>
+
+      </div>
+
+      <div class="stat-card">
+
+          <h2 id="totalUang">
+              Rp 0
+          </h2>
+
+          <p>Total Dana</p>
+
+      </div>
+
+  </div>
+
+  <div class="table-box">
+
+      <h2>
+          Daftar Peserta Qurban
+      </h2>
+
+      <table>
+
+          <thead>
+
+              <tr>
+
+                  <th>No</th>
+
+                  <th>Nama</th>
+
+                  <th>Hewan</th>
+
+                  <th>Patungan</th>
+
+                  <th>Aksi</th>
+
+              </tr>
+
+          </thead>
+
+          <tbody id="tablePeserta">
+
+          </tbody>
+
+      </table>
+
+  </div>
+
+  <div class="about">
+
+      <h2>
+          Tentang Qurban
+      </h2>
+
+      <p>
+          Qurban adalah bentuk ketaatan dan
+          rasa syukur kepada Allah SWT.
+      </p>
+
+      <div class="fitur">
+
+          <div>❤️ Ibadah yang Dicintai</div>
+
+          <div>👥 Berbagi dengan Sesama</div>
+
+          <div>🛡 Mendekatkan Diri</div>
+
+          <div>🌿 Menebar Kebaikan</div>
+
+      </div>
+
+  </div>
+
+</div>
+
+<script src="js/firebase.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
