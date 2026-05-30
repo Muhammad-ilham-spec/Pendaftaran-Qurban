@@ -11,7 +11,9 @@ body{
 
   background:
   url("../img/qurban-bg.jpg")
-  center center/cover no-repeat;
+  center center/contain no-repeat;
+
+  background-color:#1f2937;
 }
 
 .overlay{
