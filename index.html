@@ -4,80 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pendaftaran Qurban</title>
+<title>Qurban Berkah</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <div class="overlay">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="logo-circle">
-            🐄
-        </div>
+      <div class="logo-circle">
+          <i class="fa-solid fa-cow"></i>
+      </div>
 
-        <h1>
-            Pendaftaran
-            <span>Peserta Qurban</span>
-        </h1>
+      <h1>
+          Pendaftaran
+          <span>Peserta Qurban</span>
+      </h1>
 
-        <p class="subtitle">
-            Lengkapi data diri untuk mendaftar
-            sebagai peserta qurban.
-        </p>
+      <p class="subtitle">
+          Lengkapi data diri untuk mendaftar
+          sebagai peserta qurban.
+      </p>
 
-        <div class="form-box">
+      <div class="form-box">
 
-            <input
-            type="text"
-            id="nama"
-            placeholder="Nama Peserta">
+          <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input type="text"
+              id="nama"
+              placeholder="Nama Peserta">
+          </div>
 
-            <input
-            type="text"
-            id="nohp"
-            placeholder="Nomor HP">
+          <div class="input-group">
+              <i class="fa-solid fa-phone"></i>
+              <input type="text"
+              id="nohp"
+              placeholder="Nomor HP">
+          </div>
 
-            <input
-            type="text"
-            id="alamat"
-            placeholder="Alamat">
+          <div class="input-group">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text"
+              id="alamat"
+              placeholder="Alamat">
+          </div>
 
-            <select id="jenis">
-                <option value="Sapi">Sapi</option>
-                <option value="Kambing">Kambing</option>
-            </select>
+          <div class="input-group">
+              <i class="fa-solid fa-cow"></i>
+              <select id="jenis">
+                  <option value="Sapi">Sapi</option>
+                  <option value="Kambing">Kambing</option>
+              </select>
+          </div>
 
-            <input
-            type="number"
-            id="patungan"
-            placeholder="Jumlah Patungan">
+          <div class="input-group">
+              <i class="fa-solid fa-users"></i>
+              <input type="number"
+              id="patungan"
+              placeholder="Jumlah Patungan">
+          </div>
 
-            <button onclick="tambahPeserta()">
-                Daftar Sekarang →
-            </button>
+          <button onclick="tambahPeserta()">
+              Daftar Sekarang →
+          </button>
 
-        </div>
+      </div>
 
-        <div class="quote">
+      <div class="quote">
+          "Maka dirikanlah shalat karena Tuhanmu,
+          dan berqurbanlah."
+          <br><br>
+          (QS. Al-Kautsar: 2)
+      </div>
 
-            "Maka dirikanlah shalat karena Tuhanmu,
-            dan berqurbanlah."
-
-            <br><br>
-
-            (QS. Al-Kautsar: 2)
-
-        </div>
-
-    </div>
+  </div>
 
 </div>
 
