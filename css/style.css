@@ -9,11 +9,14 @@ body{
 
   min-height:100vh;
 
-  background:
-  url("../img/qurban-bg.jpg")
-  center center/contain no-repeat;
+  background-image:
+  url("../img/qurban-bg.jpg");
 
-  background-color:#1f2937;
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  background-size:75%;
 }
 
 .overlay{
