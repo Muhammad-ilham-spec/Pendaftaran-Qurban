@@ -1,31 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Pendaftaran Qurban</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pendaftaran Qurban</title>
+
 <link rel="stylesheet" href="css/style.css">
 
-<script
-src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-
-<script 
-src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"
-></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 
 </head>
+
 <body>
-   
+
+<div class="overlay">
+
     <div class="container">
-        <h1>Pendaftaran Peserta Qurban</h1>
+
+        <div class="logo-circle">
+            🐄
+        </div>
+
+        <h1>
+            Pendaftaran
+            <span>Peserta Qurban</span>
+        </h1>
+
+        <p class="subtitle">
+            Lengkapi data diri untuk mendaftar
+            sebagai peserta qurban.
+        </p>
 
         <div class="form-box">
-            <input type="text" id="nama"
+
+            <input
+            type="text"
+            id="nama"
             placeholder="Nama Peserta">
 
-            <input type="text" id="nohp"
-            placeholder="Nomor Hp">
+            <input
+            type="text"
+            id="nohp"
+            placeholder="Nomor HP">
 
-            <input type="text" id="alamat"
+            <input
+            type="text"
+            id="alamat"
             placeholder="Alamat">
 
             <select id="jenis">
@@ -33,41 +55,31 @@ src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"
                 <option value="Kambing">Kambing</option>
             </select>
 
-            <input type="number" id="patungan"
+            <input
+            type="number"
+            id="patungan"
             placeholder="Jumlah Patungan">
-            
+
             <button onclick="tambahPeserta()">
-                Daftar
+                Daftar Sekarang →
             </button>
+
         </div>
 
-        <div class="dashboard">
+        <div class="quote">
 
-  <div class="box">
+            "Maka dirikanlah shalat karena Tuhanmu,
+            dan berqurbanlah."
 
-    <h2 id="totalPeserta">
-      0
-    </h2>
+            <br><br>
 
-    <p>Total Peserta</p>
+            (QS. Al-Kautsar: 2)
 
-  </div>
-
-  <div class="box">
-
-    <h2 id="totalUang">
-      Rp 0
-    </h2>
-
-    <p>Total Uang</p>
-
-  </div>
-
-</div>
-
-        <div id="dataPeserta"></div>
+        </div>
 
     </div>
+
+</div>
 
 <script src="js/firebase.js"></script>
 <script src="js/app.js"></script>
