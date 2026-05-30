@@ -32,12 +32,23 @@ function tambahPeserta() {
   };
 
   // MODE TAMBAH
-  if (editId === null) {
+if (editId === null) {
 
-    db.ref("peserta_qurban")
-      .push(data);
+  db.ref("peserta_qurban")
+    .push(data)
+    .then(() => {
 
-  }
+      localStorage.setItem(
+        "namaUser",
+        nama
+      );
+
+      window.location.href =
+        "dashboard.html";
+
+    });
+
+}
 
   // MODE EDIT
   else {
